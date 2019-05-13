@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><title>y</title><link href=./static/css/app.547a1ee2fd38e4766df5885713f4a2ab.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.b7d7b1c01a5024d5a9e9.js></script><script type=text/javascript src=./static/js/app.15a91d8b452c79fbb158.js></script></body><script type=text/javascript>const baseSize = 20
+		// 设置 rem 函数
+		function setRem () {
+		 // 当前页面宽度相对于 750 宽的缩放比例，可根据自己需要修改。
+		 const scale = document.documentElement.clientWidth / 750
+		 // 设置页面根节点字体大小
+		 document.documentElement.style.fontSize = (baseSize * Math.min(scale, 2)) + 'px'
+		}
+		// 初始化
+		setRem()
+		// 改变窗口大小时重新设置 rem
+		window.onresize = function () {
+		 setRem()
+		}</script></html>
